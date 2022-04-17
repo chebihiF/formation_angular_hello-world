@@ -1,1 +1,16 @@
-<p>courcese works!</p>
+<p>
+    {{title}}
+</p>
+<img [src]="urlImage" width="200" height="200" />
+<br>
+<button (click)="test()">Click Me</button>
+<br>
+<input type="text" name="value" [(ngModel)]="value"> <button (click)="clear()" >Clear</button>
+<br>
+{{value}}
+<br>
+<div *ngIf="courses.length > 0">
+    <ul>
+        <li *ngFor="let course of courses"> {{course}} </li>
+    </ul>
+</div>
