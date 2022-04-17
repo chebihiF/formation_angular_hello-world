@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CourceService } from '../services/cource.service';
+import { CoursesService } from '../services/courses.service';
 
 @Component({
   selector: 'app-courcese',
@@ -8,9 +10,25 @@ import { Component, OnInit } from '@angular/core';
 
 export class CourceseComponent implements OnInit {
 
-  constructor() { }
+  value = "Hello world"
+  title = "My List of cources"
+  urlImage = "https://picsum.photos/200/300";
+  courses ;
+  
+
+  constructor(service: CoursesService, newService: CourceService) {
+    this.courses = newService.getCourses();
+   }
 
   ngOnInit(): void {
+  }
+
+  test(){
+    alert("button pressed")
+  }
+
+  clear(){
+    this.value = "";
   }
 
 }
