@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CourceseComponent } from './courcese/courcese.component';
 import { FormsModule } from '@angular/forms'
 import { CoursesService } from './services/courses.service';
+import { SummaryPipe } from './pipes/summary.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CourceseComponent
+    CourceseComponent,
+    SummaryPipe
   ],
   imports: [
     BrowserModule,

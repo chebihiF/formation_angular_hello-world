@@ -1,2 +1,7 @@
-<h1 class="test">Hello World</h1>
-<app-courcese></app-courcese>
+{{ course.title | uppercase | lowercase }} <br>
+{{ course.students | number }} <br>
+{{ course.rating | number:'1.2-2' }} <br>
+{{ course.price | currency:'EUR':true:'3.2-2' }} <br>
+{{ course.realaseDate | date:'full' }} <br>
+<br><br>
+{{text | summary:100:10}}
