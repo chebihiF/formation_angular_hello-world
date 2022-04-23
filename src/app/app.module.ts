@@ -6,12 +6,14 @@ import { CourceseComponent } from './courcese/courcese.component';
 import { FormsModule } from '@angular/forms'
 import { CoursesService } from './services/courses.service';
 import { SummaryPipe } from './pipes/summary.pipe';
+import { FavoriteComponent } from './components/favorite/favorite.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CourceseComponent,
-    SummaryPipe
+    SummaryPipe,
+    FavoriteComponent
   ],
   imports: [
     BrowserModule,

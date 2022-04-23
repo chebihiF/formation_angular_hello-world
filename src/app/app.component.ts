@@ -6,6 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
+  post1={
+    title:"Formation Angular",
+    isFavorite: true
+  }
+  post2={
+    title:"Formation React JS",
+    isFavorite: true
+  }
+  
   title = 'hello-world';
 
   course = {
@@ -17,5 +27,10 @@ export class AppComponent {
   }
 
   text = "DatePipe is executed only when it detects a pure change to the input value. A pure change is either a change to a primitive input value (such as String, Number, Boolean, or Symbol), or a changed object reference (such as Date, Array, Function, or Object) Note that mutating a Date object does not cause the pipe to be rendered again. To ensure that the pipe is executed, you must create a new Date object."
+
+  onPostChanged(newPost:any){
+    console.log(newPost.newValue);
+  }
+
 
 }

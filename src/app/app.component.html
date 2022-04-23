@@ -1,3 +1,4 @@
+<!--
 {{ course.title | uppercase | lowercase }} <br>
 {{ course.students | number }} <br>
 {{ course.rating | number:'1.2-2' }} <br>
@@ -5,3 +6,8 @@
 {{ course.realaseDate | date:'full' }} <br>
 <br><br>
 {{text | summary:100:10}}
+-->
+
+<app-favorite [postTitle]="post1.title" (change)="onPostChanged($event)"></app-favorite>
+<app-favorite [postTitle]="post2.title"></app-favorite>
+
